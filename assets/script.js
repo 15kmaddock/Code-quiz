@@ -2,10 +2,10 @@ var score = 0;
 var timer;
 var timerCounter = 60;
 
-var intro = document.getElementById("intro");
-var start = document.getElementById("startBtn");
+var main = document.getElementById("main");
+var start = document.getElementById("beginBtn");
 var quiz = document.getElementById("quiz");
-var questionBox = document.getElementById("questionBox");
+var questionContainer = document.getElementById("questionContainer");
 var quizQuestion = document.getElementById("question");
 var correctA = document.getElementById("correctA");
 var correctB = document.getElementById("correctB");
@@ -14,7 +14,8 @@ var countdown = document.getElementById("countdown");
 var criticismEl = document.getElementById("criticism");
 var submitBtn = document.getElementById("submit");
 
-
+questionContainer.style.display = "none";
+countdown.style.display = "none";
 
 var questions = [
     {
